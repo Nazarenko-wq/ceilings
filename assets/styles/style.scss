@@ -1,6 +1,9 @@
 .wrapper {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+
+    .main_wrap {
+        height: 200px;
+    }
 }
