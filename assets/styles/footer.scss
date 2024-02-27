@@ -14,10 +14,18 @@
         padding: 10px 0;
 
         .adress {
-            margin: 20px 200px 0 0;
+            margin: 32px 217px 0 0;
             span {
-                margin: 0 0 0 10px;
+                margin: 0 0 0 22px;
                 vertical-align: middle;
+
+                font-family: PF Bague Sans Pro;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.05em;
+                text-align: left;
+
             }
         }
 
@@ -41,30 +49,31 @@
                     }
                 }
     
-                .header_numbers {
+                .footer_numbers {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: left;
-                    gap: 5px;
+                    padding: 11px 0 0 0;
     
                     a {
                         color: white;
                         text-decoration: none;
-                        margin: 5px 0 0 20px;
-                    }
-    
-                    .headerPhoneUndertext {
-                        li {
-                            color: #619E2D;
-                            margin-left: 40px;
-                        }
+                        margin: 0px 0 0 20px;
+
+                        font-family: PF Bague Sans Pro;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0.05em;
+                        text-align: left;
+
                     }
                 }
             }
 
             .footer_logo {
-                margin: 20px 0 0;
+                margin: 39px 0 0;
             }
         }
     }
