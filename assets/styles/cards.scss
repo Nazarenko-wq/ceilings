@@ -1,0 +1,91 @@
+.gallery {
+    max-width: 1568px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+
+    .gallery_title {
+        font-family: Geometria;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+
+    .gallery_conditions {
+        font-family: Geometria;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-align: left;
+
+    }
+
+    .cards {
+        max-width: 1568px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // margin: 5px;
+
+        .card {
+            width: 344px;
+            height: 477px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            background-image: url(../img/card1.png);
+            background-repeat: no-repeat;
+            margin: 20px;
+            
+            .card_description {
+                width: 237px;
+                height: 84px;
+                border-radius: 0 0 20px 20px;
+                background-color: rgba(255, 255, 255, 0.88);
+
+                .card_title {
+                    font-family: Geometria;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                }
+
+                .card_subtitle {
+                    font-family: Geometria;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    span {
+                        font-family: Geometria;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+
+                }
+            }
+
+            .calculator {
+                width: 96px;
+                height: 90px;
+
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}
