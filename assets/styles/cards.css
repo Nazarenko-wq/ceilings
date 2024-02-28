@@ -44,6 +44,10 @@
 }
 .gallery .cards .card .card_btn {
   display: none;
+  transition: all 1s;
+}
+.gallery .cards .card:hover {
+  transition: all 1s;
 }
 .gallery .cards .card:hover .card_btn {
   width: 272px;
@@ -96,8 +100,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+  letter-spacing: 0.05em;
+  display: block;
 }
 .gallery .cards .card .calculator {
   width: 96px;

@@ -22,9 +22,13 @@ for(let i = 1; i < 9; i++) {
     cardDiscription.append(cardTitle);
 
     let cardSubtitle = document.createElement('p');
-    cardSubtitle.textContent = 'Цена с установкой:'
+    cardSubtitle.textContent = 'Цена с установкой:';
     cardSubtitle.classList.add('card_subtitle');
     cardDiscription.append(cardSubtitle);
+
+    let span = document.createElement('span');
+    span.textContent = 'от 20 BYN/м²';
+    cardSubtitle.append(span);
 
     let calculator = document.createElement('div');
     calculator.classList.add('calculator');

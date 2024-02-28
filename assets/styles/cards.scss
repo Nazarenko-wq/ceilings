@@ -46,9 +46,11 @@
 
             .card_btn{
                 display: none;
+                transition: all 1s;
             }
 
             &:hover {
+                transition: all 1s;
                 .card_btn {
                     width: 272px;
                     height: 56px;
@@ -104,8 +106,8 @@
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 18px;
-                        letter-spacing: 0em;
-                        text-align: left;
+                        letter-spacing: 0.05em;
+                        display: block;
                     }
 
                 }
