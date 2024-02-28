@@ -2,7 +2,7 @@
   max-width: 1568px;
   width: 100%;
   height: auto;
-  margin: 0px auto;
+  margin: 0px auto 40px;
   padding: 31px 0 0 0;
 }
 .gallery .gallery_title {
@@ -30,7 +30,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 44px;
 }
 .gallery .cards .card {
   width: 344px;
@@ -40,10 +40,12 @@
   justify-content: space-around;
   background-image: url(../img/card1.png);
   background-repeat: no-repeat;
-  margin: 0 0 44px 0;
   position: relative;
 }
 .gallery .cards .card .card_btn {
+  display: none;
+}
+.gallery .cards .card:hover .card_btn {
   width: 272px;
   height: 56px;
   border-radius: 10px;
@@ -52,8 +54,18 @@
   align-items: center;
   background: rgb(97, 158, 45);
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 43%;
+  left: 11%;
+  color: white;
+  font-family: Geometria;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  transition: all 1s;
+}
+.gallery .cards .card:hover .card_btn:hover {
+  transform: scale(1.1);
 }
 .gallery .cards .card .card_description {
   width: 237px;

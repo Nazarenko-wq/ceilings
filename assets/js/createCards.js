@@ -7,6 +7,11 @@ for(let i = 1; i < 9; i++) {
     card.classList.add('card');
     parent.append(card);
 
+    let btn = document.createElement('button');
+    btn.textContent = 'Заказать';
+    btn.classList.add('card_btn');
+    card.append(btn);
+
     let cardDiscription = document.createElement('div');
     cardDiscription.classList.add('card_description');
     card.append(cardDiscription);
@@ -29,13 +34,3 @@ for(let i = 1; i < 9; i++) {
     img.src = `./assets/img/calculator.png`;
     calculator.append(img);
 }
-
-parent.addEventListener('mouseover', function(event) {
-    // console.log(event.target);
-    if(event.target.classList.contains('card')) {
-        let activeCard = document.querySelector('.card');
-        let btn = document.createElement('button');
-        btn.classList.add('card_btn');
-        activeCard.append(btn);
-    }
-})
