@@ -9,6 +9,7 @@
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.05em;
+  margin: 0 0 27px 0;
 }
 .calculate .calculate_title span {
   font-family: Montserrat;
@@ -24,6 +25,7 @@
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.05em;
+  margin-bottom: 35px;
 }
 .calculate .calculation_content {
   display: flex;
@@ -34,21 +36,19 @@
   height: 936px;
   position: relative;
   background-image: url(../img/saleBg.png);
-  background-position: 0% 84%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 92% 100%;
 }
 .calculate .calculation_content .calculate_sales img {
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 0;
 }
 .calculate .calculation_content .sale_pagination {
   max-width: 1160px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0 63px;
 }
 .calculate .calculation_content .sale_pagination .wrapper-poginater {
   max-width: 1016px;
@@ -58,7 +58,7 @@
   border-radius: 50px;
   box-sizing: border-box;
   padding: 1px;
-  margin-top: 20px;
+  margin: 36px auto 22px;
 }
 .calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range] {
   display: block;
@@ -89,6 +89,13 @@
 .calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range]::-webkit-slider-thumb:active {
   transform: scale(1.2);
 }
+.calculate .calculation_content .sale_pagination .steps {
+  max-width: 1160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .calculate .calculation_content .sale_pagination .steps .step_btn {
   width: 160px;
   height: 40px;
@@ -118,14 +125,17 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .calculate .calculation_content .sale_pagination .pagination_subtitle {
   font-family: Geometria;
   font-size: 20px;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 43px;
 }
 .calculate .calculation_content .sale_pagination .pagination_cards {
   display: flex;
@@ -133,18 +143,14 @@
   gap: 40px;
 }
 .calculate .calculation_content .sale_pagination .pagination_cards .pagination_card {
-  max-width: 320px;
-  width: 100%;
+  width: 320px;
   height: 248px;
   background-image: url(../img/pagination1.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 80%;
   display: flex;
   align-items: flex-end;
-}
-.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info {
-  display: flex;
 }
 .calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info .pagination_checkbox {
   display: none;
@@ -153,19 +159,20 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 25px;
+  padding-left: 47px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: PF Bague Sans Pro;
-  font-size: 16px;
+  height: 30px;
+  vertical-align: middle;
+  font-family: Geometria;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 28px;
   letter-spacing: 0.05em;
   text-align: left;
-  vertical-align: middle;
-  margin: 29px 0 0 80px;
+  margin: 0 0 -3px 0px;
 }
 .calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info label::before {
   content: "";
@@ -175,9 +182,9 @@
   position: absolute;
   left: 0;
   bottom: 4px;
-  border: 1px solid #619E2D;
   border-radius: 50%;
-  background-image: url(../icons/checkMark.svg);
+  background: #E5E8F0;
+  background-image: url(../icons/checkPaginationBlack.svg);
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 10;
@@ -185,4 +192,7 @@
 .calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info input[type=checkbox]:checked + label::before {
   border: none;
   background: #619E2D;
+  background-image: url(../icons/checkPagination.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=calculate.css.map */

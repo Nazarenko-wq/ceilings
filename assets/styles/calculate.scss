@@ -10,6 +10,7 @@
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0.05em;
+        margin: 0 0 27px 0;
 
         span {
             font-family: Montserrat;
@@ -28,6 +29,7 @@
         font-weight: 400;
         line-height: 30px;
         letter-spacing: 0.05em;
+        margin-bottom: 35px;
     }
 
     .calculation_content {
@@ -39,23 +41,21 @@
             height: 936px;
             position: relative;
             background-image: url(../img/saleBg.png);
-            background-position: 0% 84%;
+            background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 92% 100%;
 
             img {
                 position: absolute;
                 bottom: 0;
-                left: 10%;
+                left: 0;
             }
         }
 
         .sale_pagination {
             max-width: 1160px;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 0 63px;
 
             .wrapper-poginater {
                 max-width: 1016px;
@@ -65,9 +65,7 @@
                 border-radius: 50px;
                 box-sizing: border-box;
                 padding: 1px;
-              
-
-                margin-top: 20px;
+                margin: 36px auto 22px;
 
                 input[type=range] {
                     display: block;
@@ -103,6 +101,12 @@
             }
 
             .steps {
+                max-width: 1160px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
                 .step_btn {
                     width: 160px;
                     height: 40px;
@@ -137,7 +141,8 @@
                 font-size: 32px;
                 font-weight: 700;
                 line-height: 40px;
-                letter-spacing: 0.05em;
+                letter-spacing: 0em;
+                text-align: center;
             }
 
             .pagination_subtitle {
@@ -145,7 +150,9 @@
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 40px;
-                letter-spacing: 0.05em;
+                letter-spacing: 0.03em;
+                text-align: center;
+                margin-bottom: 43px;
             }
 
             .pagination_cards {
@@ -154,18 +161,16 @@
                 gap: 40px;
 
                 .pagination_card {
-                    max-width: 320px;
-                    width: 100%;
+                    width: 320px;
                     height: 248px;
                     background-image: url(../img/pagination1.png);
-                    background-position: center;
+                    background-position: top;
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: 100% 80%;
                     display: flex;
                     align-items: flex-end;
 
                     .pagination_card_info {
-                        display: flex;
 
                         .pagination_checkbox {
                             display: none;
@@ -175,16 +180,18 @@
                             display: inline-block;
                             cursor: pointer;
                             position: relative;
-                            padding-left: 25px;
+                            padding-left: 47px;
                             user-select: none;
-                            font-family: PF Bague Sans Pro;
-                            font-size: 16px;
+                            height: 30px;
+                            vertical-align: middle;
+
+                            font-family: Geometria;
+                            font-size: 20px;
                             font-weight: 400;
-                            line-height: 18px;
+                            line-height: 28px;
                             letter-spacing: 0.05em;
                             text-align: left;
-                            vertical-align: middle;
-                            margin: 29px 0 0 80px;
+                            margin: 0 0 -3px 0px;
             
             
                             &::before {
@@ -195,10 +202,10 @@
                                 position: absolute;
                                 left: 0;
                                 bottom: 4px;
-                                border: 1px solid #619E2D;
                                 border-radius: 50%;
+                                background: #E5E8F0;
 
-                                background-image: url(../icons/checkMark.svg);
+                                background-image: url(../icons/checkPaginationBlack.svg);
                                 background-position: center center;
                                 background-repeat: no-repeat;
                                 z-index: 10;
@@ -208,9 +215,9 @@
                         input[type=checkbox]:checked + label::before {
                             border: none;
                             background: #619E2D;
-                            // background-image: url(../icons/checkMark.svg);
-                            // background-position: center center;
-                            // background-repeat: no-repeat;
+                            background-image: url(../icons/checkPagination.svg);
+                            background-position: center center;
+                            background-repeat: no-repeat;
                         }
                     }
                 }
