@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/styles/footer.css">
     <link rel="stylesheet" href="./assets/styles/welcome.css">
     <link rel="stylesheet" href="./assets/styles/cards.css">
+    <link rel="stylesheet" href="./assets/styles/calculate.css">
 </head>
 <body>
     <div class="wrapper">
@@ -103,8 +104,55 @@
             <section class="calculate">
                 <h3 class="calculate_title">
                     Рассчитайте стоимость натяжного потолка 
-                    по вашим параметрам за 1 минуту и получите скидку 10%
+                    по вашим параметрам за 1 минуту и получите <span>скидку 10%</span>
                 </h3>
+                <h5  class="calculate_subtitle">
+                    Ответьте всего на 6 вопросов
+                    Это бесплатно и ни к чему не обязывает
+                </h5>
+                <div class="calculation_content">
+                    <div class="calculate_sales">
+                        <img src="./assets/img/fav.png" alt="Man">
+                    </div>
+                    <div class="sale_pagination">
+                        <div class="wrapper-poginater">
+                            <input type="range" name="poginator" id="range" min="1" max="6" value="0">
+                        </div>
+                        <div class="steps">
+                            <buttton class="step_btn">
+                                <p>Шаг <span class="current_step">1</span> из 6</p>
+                            </buttton>
+                        </div>
+                        <h3 class="paginatiob_title">
+                            Где требуется установить потолок?
+                        </h3>
+                        <h5 class="pagination_subtitle">
+                            (можно выбрать несколько вариантов)
+                        </h5>
+                        <div class="pagination_cards">
+                            <div class="pagination_card">
+                                <div class="pagination_card_info">
+                                    <input type="checkbox" class="pagination_checkbox" name="check" id="pagination_card" checked>
+                                    <label for="pagination_card"><span>
+                                        Вся квартира/дом
+                                    </span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination_botton_block">
+                            <div class="paginat_condition_block">
+                                <img src="./assets/icons/hend.svg" alt="Arm">
+                                <div class="hand_discr">
+                                    <p><span>Выберите вариант ответа</span>
+                                        и нажмите кнопку «Далее»</p>
+                                </div>
+                            </div>
+                            <button class="pagination_next">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="footer_wrap">
@@ -132,5 +180,6 @@
     </div>
 
     <script src="./assets/js/createCards.js"></script>
+    <script src="./assets/js/paginationCards.js"></script>
 </body>
 </html>

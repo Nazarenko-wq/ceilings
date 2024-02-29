@@ -1,0 +1,188 @@
+.calculate {
+  max-width: 1568px;
+  width: 100%;
+  margin: 0 auto;
+}
+.calculate .calculate_title {
+  font-family: Geometria;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculate_title span {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: rgb(97, 158, 45);
+}
+.calculate .calculate_subtitle {
+  font-family: Geometria;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculation_content {
+  display: flex;
+  justify-content: space-between;
+}
+.calculate .calculation_content .calculate_sales {
+  width: 446px;
+  height: 936px;
+  position: relative;
+  background-image: url(../img/saleBg.png);
+  background-position: 0% 84%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.calculate .calculation_content .calculate_sales img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.calculate .calculation_content .sale_pagination {
+  max-width: 1160px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calculate .calculation_content .sale_pagination .wrapper-poginater {
+  max-width: 1016px;
+  width: 100%;
+  height: 16px;
+  background: #F2F0F5;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 1px;
+  margin-top: 20px;
+}
+.calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #F5F7F6;
+  max-width: 1016px;
+  width: 100%;
+  height: 16px;
+  border-radius: 50px;
+  margin: 0 auto;
+  outline: 0;
+}
+.calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, #619E2D 0%, #A5DE74 137.66%);
+  width: 152px;
+  height: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range]::-webkit-slider-thumb:hover {
+  background-color: #E47209;
+  cursor: pointer;
+}
+.calculate .calculation_content .sale_pagination .wrapper-poginater input[type=range]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+}
+.calculate .calculation_content .sale_pagination .steps .step_btn {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(90deg, #619E2D 0%, #A5DE74 137.66%);
+}
+.calculate .calculation_content .sale_pagination .steps .step_btn p {
+  font-family: Geometria;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculation_content .sale_pagination .steps .step_btn p .current_step {
+  font-family: Geometria;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculation_content .sale_pagination .paginatiob_title {
+  font-family: Geometria;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculation_content .sale_pagination .pagination_subtitle {
+  font-family: Geometria;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card {
+  max-width: 320px;
+  width: 100%;
+  height: 248px;
+  background-image: url(../img/pagination1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info {
+  display: flex;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info .pagination_checkbox {
+  display: none;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: PF Bague Sans Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  vertical-align: middle;
+  margin: 29px 0 0 80px;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  border: 1px solid #619E2D;
+  border-radius: 50%;
+  background-image: url(../icons/checkMark.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.calculate .calculation_content .sale_pagination .pagination_cards .pagination_card .pagination_card_info input[type=checkbox]:checked + label::before {
+  border: none;
+  background: #619E2D;
+}/*# sourceMappingURL=calculate.css.map */
